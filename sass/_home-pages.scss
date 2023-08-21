@@ -99,15 +99,18 @@
     border-radius: 20px;
     overflow: hidden;
     padding-top: 12px;
-    img{
-      width: 54.73%;
-      height: 35.85%;
-    }
-    h6{
-      font-family: 'Patua One', cursive;
-      font-size: 14px;
-      font-weight: 400;
-      color: #F0F3F4;
+    a{
+      text-decoration: none;
+      img{
+        width: 54.73%;
+        height: 35.85%;
+      }
+      h6{
+        font-family: 'Patua One', cursive;
+        font-size: 14px;
+        font-weight: 400;
+        color: #F0F3F4;
+      }
     }
   }
 }

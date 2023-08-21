@@ -92,11 +92,14 @@
   overflow: hidden;
   padding-top: 12px;
 }
-.footer-pages .content-footer img {
+.footer-pages .content-footer a {
+  text-decoration: none;
+}
+.footer-pages .content-footer a img {
   width: 54.73%;
   height: 35.85%;
 }
-.footer-pages .content-footer h6 {
+.footer-pages .content-footer a h6 {
   font-family: "Patua One", cursive;
   font-size: 14px;
   font-weight: 400;
