@@ -63,6 +63,7 @@
     height: 90%;
     margin-bottom: 43px;
     text-align: center;
+    transition: all ease 0.3s;
 
     a {
       display: flex;
@@ -84,7 +85,16 @@
         letter-spacing: 2px;
         text-shadow: -2px -2px 0px variable.$boxTittleBorder, 2px -2px 0px variable.$boxTittleBorder, -2px 2px 0px variable.$boxTittleBorder, 2px 2px 0px variable.$boxTittleBorder;
         font-family: 'Paytone One', sans-serif;
-
+        transition: all ease 0.3s;
+      }
+    }
+  }
+  .food:hover{
+    transform: scale(0.98);
+    border-color: variable.$boxBorderHover;
+    a{
+      h4{
+        color: variable.$boxTittleHover;
       }
     }
   }
@@ -106,6 +116,7 @@
     border-radius: 20px;
     overflow: hidden;
     padding-top: 12px;
+    transition: all ease 0.3s;
 
     a {
       text-decoration: none;
@@ -119,8 +130,15 @@
         font-family: 'Patua One', cursive;
         font-size: 14px;
         font-weight: 400;
-        color: #F0F3F4;
+        color: variable.$footerTittle;
+        transition: all ease-in 0.2s;
       }
+    }
+  }
+  .content-footer:hover{
+    transform: scale(0.98);
+    h6{
+      color: variable.$footerTittleHover;
     }
   }
 }

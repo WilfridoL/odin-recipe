@@ -55,6 +55,7 @@
   height: 90%;
   margin-bottom: 43px;
   text-align: center;
+  transition: all ease 0.3s;
 }
 .menu .food a {
   display: flex;
@@ -75,6 +76,14 @@
   letter-spacing: 2px;
   text-shadow: -2px -2px 0px #040404, 2px -2px 0px #040404, -2px 2px 0px #040404, 2px 2px 0px #040404;
   font-family: "Paytone One", sans-serif;
+  transition: all ease 0.3s;
+}
+.menu .food:hover {
+  transform: scale(0.98);
+  border-color: #D6AC04;
+}
+.menu .food:hover a h4 {
+  color: #0682D6;
 }
 
 .footer-pages {
@@ -93,6 +102,7 @@
   border-radius: 20px;
   overflow: hidden;
   padding-top: 12px;
+  transition: all ease 0.3s;
 }
 .footer-pages .content-footer a {
   text-decoration: none;
@@ -106,8 +116,127 @@
   font-size: 14px;
   font-weight: 400;
   color: #F0F3F4;
+  transition: all ease-in 0.2s;
+}
+.footer-pages .content-footer:hover {
+  transform: scale(0.98);
+}
+.footer-pages .content-footer:hover h6 {
+  color: #ECF0F1;
 }
 
+@media (min-width: 1336px) {
+  .container {
+    position: relative;
+    max-width: 100%;
+  }
+  .container .title {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .container .title .col-img {
+    width: 100%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: -6%;
+  }
+  .container .title .col-img img {
+    transform: scale(1.2);
+    width: 35%;
+  }
+  .container .title .text-tittle {
+    position: absolute;
+    top: -100%;
+    left: 4.53%;
+    transform: rotate(1deg);
+    font-size: 22px;
+  }
+  .container .menu {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30%;
+    margin-top: 4%;
+  }
+  .container .menu .food {
+    width: 70%;
+    height: 90%;
+  }
+  .container .menu .food a h4 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .container .footer-pages {
+    width: 100%;
+  }
+  .container .footer-pages .content-footer {
+    width: 40.43%;
+    height: 10.18%;
+  }
+  .container .footer-pages .content-footer a img {
+    width: 60.73%;
+    height: 100%;
+  }
+  .container .footer-pages .content-footer a h6 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1335px) {
+  .container {
+    position: relative;
+    max-width: 100%;
+  }
+  .container .title {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .container .title .col-img {
+    width: 100%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: -6%;
+  }
+  .container .title .col-img img {
+    transform: scale(1.2);
+    width: 35%;
+  }
+  .container .title .text-tittle {
+    position: absolute;
+    top: -100%;
+    left: 4.53%;
+    transform: rotate(1deg);
+    font-size: 18px;
+  }
+  .container .menu {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30%;
+    margin-top: 4%;
+  }
+  .container .menu .food {
+    width: 70%;
+    height: 90%;
+  }
+  .container .menu .food a h4 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .container .footer-pages {
+    width: 100%;
+  }
+  .container .footer-pages .content-footer {
+    width: 40.43%;
+    height: 10.18%;
+  }
+  .container .footer-pages .content-footer a img {
+    width: 60.73%;
+    height: 100%;
+  }
+  .container .footer-pages .content-footer a h6 {
+    font-size: 13px;
+  }
+}
 @media (min-width: 700px) and (max-width: 1024px) {
   .title .col-img {
     margin-top: -1%;
@@ -198,6 +327,7 @@ body {
   justify-content: center;
   background: #1B1919;
   font-family: "Passion One", cursive;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

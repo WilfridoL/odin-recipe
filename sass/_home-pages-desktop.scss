@@ -1,0 +1,144 @@
+@use 'variable';
+@media (min-width:1336px){
+  .container {
+    position: relative;
+    max-width: 100%;
+
+    .title {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+      .col-img {
+        width: 100%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: -6%;
+
+        img {
+          transform: scale(1.2);
+          width: 35%;
+        }
+      }
+
+      .text-tittle {
+        position: absolute;
+        top: -100%;
+        left: 4.53%;
+        transform: rotate(1deg);
+        font-size: 22px;
+      }
+    }
+
+    .menu {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30%;
+      margin-top: 4%;
+
+      .food {
+        width: 70%;
+        height: 90%;
+
+        a {
+          h4 {
+            font-size: 28px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+
+    .footer-pages {
+      width: 100%;
+
+      .content-footer {
+        width: 40.43%;
+        height: 10.18%;
+
+        a {
+
+          img {
+            width: 60.73%;
+            height: 100%;
+          }
+
+          h6 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:1025px) and (max-width:1335px) {
+  .container {
+    position: relative;
+    max-width: 100%;
+
+    .title {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+      .col-img {
+        width: 100%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: -6%;
+        // background: blue;
+
+        img {
+          transform: scale(1.2);
+          width: 35%;
+        }
+      }
+
+      .text-tittle {
+        position: absolute;
+        top: -100%;
+        left: 4.53%;
+        transform: rotate(1deg);
+        font-size: 18px;
+      }
+    }
+
+    .menu {
+      position: relative;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30%;
+      margin-top: 4%;
+
+      .food {
+        width: 70%;
+        height: 90%;
+
+        a {
+          h4 {
+            font-size: 24px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+
+    .footer-pages {
+      width: 100%;
+
+      .content-footer {
+        width: 40.43%;
+        height: 10.18%;
+
+        a {
+
+          img {
+            width: 60.73%;
+            height: 100%;
+          }
+
+          h6 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
