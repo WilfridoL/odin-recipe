@@ -1,5 +1,6 @@
 @use 'variable';
 @use 'home-pages';
+@use 'recipe-pages';
 @use 'home-pages-desktop';
 @use 'home-pages-tablet';
 *{
@@ -16,4 +17,5 @@ body{
   background: variable.$backgroundHome;
   font-family: 'Passion One', cursive;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }

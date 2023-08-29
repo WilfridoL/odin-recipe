@@ -1,0 +1,91 @@
+@use 'variable';
+
+.container-recipe {
+  .recipe-img {
+    width: 100%;
+    height: 34.68vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    a {
+      position: absolute;
+      top: 4.05%;
+      left: 1.66%;
+      width: 10%;
+      height: 16.21%;
+      background: rgba(217, 217, 217, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      opacity: 100%;
+      z-index: 100;
+      transition: all 0.3s ease-in;
+
+      span {
+        color: variable.$boxTittleBorder;
+      }
+    }
+
+    a:hover {
+      background: rgba(217, 217, 217, 0.815);
+    }
+
+    .img {
+      width: 100%;
+      opacity: 70%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      position: absolute;
+      bottom: 0;
+      text-transform: uppercase;
+      color: variable.$titleLetterWhite;
+    }
+  }
+  .description{
+    width: 100%;
+    margin-top: 20px;
+    padding:0px 10px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: variable.$footerTittle;
+  }
+  .recipe{
+    margin-top: 20px;
+    .ingredients,
+    .instructions{
+      margin-bottom: 20px;
+      h3{
+        color: variable.$titleLetterWhite;
+        padding-left: 16px;
+      }
+    }
+    .ingredients{
+      ul{
+        margin-top: 10px;
+        padding:0px 33px;
+        font-size: 0.88rem;
+        color: variable.$footerTittle;
+      }
+    }
+    .instructions{
+      ol{
+        margin-top: 10px;
+        padding:0px 33px;
+        font-size: 0.88rem;
+        color: variable.$footerTittle;
+        li{
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+}
